@@ -8,9 +8,12 @@ url = "/contact"
 
 Let us know when you'd like to book a reservation and we'll contact you within 30 min to confirm or find another time.
 
-<form name="reservation">
+<form name="reservation" action="thank-you" netlify>
+<label for="name" class="sr-only">Your Name</label>
   <input type="text" placeholder="Your Name" name="name">
+<label for="email" class="sr-only">Your Email</label>
   <input type="email" placeholder="Your Email" name="email">
+<label for="message" class="sr-only">Booking Details</label>
   <textarea name="message" placeholder="When would you like to book a reservation?"></textarea>
   <button>Send</button>
 </form>
